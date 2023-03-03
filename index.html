@@ -1,13 +1,50 @@
 <!doctype html>
 <html>
+
 <head>
-<title>Prepare the Frog</title>
-<meta name="description" content="It is time. Prepare the frog.">
-<meta name="keywords" content="ferrari doing bad time for the frog">
+  <title>Prepare the Frog</title>
+  <meta name="description" content="It is time. Prepare the frog.">
+  <meta name="keywords" content="ferrari doing bad time for the frog">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mynerve">
+  <style>
+    .mood {
+      font-family: 'Mynerve';
+      font-size: 80px;
+      color: lightgray;
+    }
+
+    .logos {
+      height: 25vh;
+    }
+
+    .vertical {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px
+    }
+  </style>
 </head>
-<body>
+
+<body style="background-color: black">
   <div style="display: flex; align-items: center; justify-content: center;">
-    <img src="frog_sad_curb.png" />
+    <div style="display: flex; gap: 40px">
+      <div class="vertical">
+        <img src="img/logo.gif" class="logos" />
+        <img src="img/logo.gif" class="logos" />
+        <img src="img/logo.gif" class="logos" />
+      </div>
+      <div class="vertical">
+        <img src="img/frog_sad_curb.png" style="height: 80vh;" />
+        <div class="mood">#mood</div>
+      </div>
+      <div class="vertical">
+        <img src="img/logo.gif" class="logos" />
+        <img src="img/logo.gif" class="logos" />
+        <img src="img/logo.gif" class="logos" />
+      </div>
+    </div>
   </div>
-  </body>
+</body>
+
 </html>

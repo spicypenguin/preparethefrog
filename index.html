@@ -5,6 +5,7 @@
   <title>Prepare the Frog</title>
   <meta name="description" content="It is time. Prepare the frog.">
   <meta name="keywords" content="ferrari doing bad time for the frog">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mynerve">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -12,6 +13,21 @@
   <link rel="manifest" href="/site.webmanifest">
   <script src="script.js"></script>
   <style>
+    @media screen and (max-width: 767px) {
+      .hidden-mobile {
+        display: none !important;
+      }
+
+      #mood {
+        font-size: 40px !important;
+      }
+
+      .mainImg {
+        width: 100%;
+        height: unset !important;
+      }
+    }
+
     #mood {
       font-family: 'Mynerve';
       font-size: 80px;
@@ -21,6 +37,10 @@
 
     .logos {
       height: 25vh;
+    }
+
+    .mainImg {
+      height: 80vh;
     }
 
     .vertical {
@@ -35,16 +55,16 @@
 <body style="background-color: black">
   <div id="everything" style="align-items: center; justify-content: center; display: none;">
     <div style="display: flex; gap: 40px">
-      <div class="vertical">
+      <div class="vertical hidden-mobile">
         <img src="img/logo.gif" class="logos" />
         <img src="img/logo.gif" class="logos" />
         <img src="img/logo.gif" class="logos" />
       </div>
       <div class="vertical">
-        <img id="imgContainer" style="height: 80vh;" />
+        <img id="imgContainer" class="mainImg" />
         <div id="mood">#mood</div>
       </div>
-      <div class="vertical">
+      <div class="vertical hidden-mobile">
         <img src="img/logo.gif" class="logos" />
         <img src="img/logo.gif" class="logos" />
         <img src="img/logo.gif" class="logos" />

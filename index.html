@@ -10,11 +10,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+  <script src="script.js"></script>
   <style>
-    .mood {
+    #mood {
       font-family: 'Mynerve';
       font-size: 80px;
       color: lightgray;
+      cursor: pointer;
     }
 
     .logos {
@@ -31,7 +33,7 @@
 </head>
 
 <body style="background-color: black">
-  <div style="display: flex; align-items: center; justify-content: center;">
+  <div id="everything" style="align-items: center; justify-content: center; display: none;">
     <div style="display: flex; gap: 40px">
       <div class="vertical">
         <img src="img/logo.gif" class="logos" />
@@ -39,8 +41,8 @@
         <img src="img/logo.gif" class="logos" />
       </div>
       <div class="vertical">
-        <img src="img/frog_sad_curb.png" style="height: 80vh;" />
-        <div class="mood">#mood</div>
+        <img id="imgContainer" style="height: 80vh;" />
+        <div id="mood">#mood</div>
       </div>
       <div class="vertical">
         <img src="img/logo.gif" class="logos" />
